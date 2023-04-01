@@ -1,4 +1,3 @@
-#testing for github commit
 import os
 import openai
 
@@ -6,7 +5,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = 'INSERT KEY HERE'
 
 model_id = 'gpt-3.5-turbo'
 
