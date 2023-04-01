@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Example</title>
+  </head>
+  <body>
+    <form method="POST" action="/output">
+        input->
+      <input type="text" name="input_text" value="type your question here!">
+      <button type="submit">Click me!</button>
+    </form>
+    {% if output_text %}
+      <textarea cols="50" rows="10">{{ output_text }}</textarea>
+    {% endif %}
+  </body>
+</html>
