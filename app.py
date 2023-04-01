@@ -1,11 +1,12 @@
 #testing for github commit
+import os
 import openai
 
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 model_id = 'gpt-3.5-turbo'
 
